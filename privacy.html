@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>reelsync privacy policy</title>
+  <meta name="description" content="What data reelsync accesses, how it is used and stored, and how to revoke access or request deletion.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy policy</a></nav>
+
+  <h1>Privacy policy</h1>
+  <p class="muted">reelsync · Last updated 27 October 2026</p>
+
+  <p>reelsync is an internal tool for the Uzum Tezkor content team. It republishes Reels from Uzum Tezkor's own Instagram account to Uzum Tezkor's own YouTube channel. This page explains what data it touches and why.</p>
+
+  <h2>Data it accesses</h2>
+  <ul>
+    <li><strong>Instagram (through the Instagram API).</strong> The list of media on the brand's own account: media ID, caption, media type, link, publish time and the video file. If the API does not provide a Reel's video file, reelsync downloads the video from that Reel's public page instead.</li>
+    <li><strong>YouTube (through YouTube API Services).</strong> It uploads videos to the authorised channel. It also reads the channel's basic information and the status of the videos it uploaded, to confirm the upload worked and to avoid duplicates.</li>
+  </ul>
+  <p>reelsync does not access any other accounts, followers, comments, messages or viewer data.</p>
+
+  <h2>How the data is used</h2>
+  <p>Only to republish the brand's own Reels on the brand's own YouTube channel. The Instagram caption is used to build the YouTube title and description. Nothing is used for advertising, profiling or analytics, and nothing is sold.</p>
+
+  <h2>What is stored, and for how long</h2>
+  <ul>
+    <li>Video files are kept only while they are being uploaded, then deleted.</li>
+    <li>A small record is kept for each Reel (Instagram media ID, link, publish time, YouTube video ID and upload status) so the same Reel is never uploaded twice. YouTube data in these records is refreshed or deleted at least every 30 days.</li>
+    <li>The access tokens that let reelsync act on the two accounts are stored encrypted, or as protected secrets, and are never published.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>Videos and their titles and descriptions are sent to YouTube (Google), which is the purpose of the tool. If something fails, the team gets an alert in a private Telegram chat containing the Reel's link and the error message. No data is shared with anyone else.</p>
+
+  <h2>YouTube and Google</h2>
+  <p>reelsync uses YouTube API Services. By using reelsync, you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+  <h2 id="revoke">Revoking access</h2>
+  <ul>
+    <li><strong>Google / YouTube:</strong> remove "reelsync" at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> (Google Account → Security → Third-party apps and services).</li>
+    <li><strong>Instagram:</strong> in the Instagram app, go to Settings → Website permissions → Apps and websites, and remove reelsync.</li>
+  </ul>
+  <p>After access is revoked, reelsync can no longer read from or upload to that account.</p>
+
+  <h2 id="deletion">Data deletion</h2>
+  <p>To have reelsync's stored records deleted, revoke access as described above and <a href="https://github.com/retmasta/reelsync-site/issues">open an issue</a> asking for deletion. Records are deleted within 30 days. Videos already published on YouTube stay on the channel until the channel owner deletes them in YouTube Studio.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date at the top of this page will change too.</p>
+
+  <footer>Questions: <a href="https://github.com/retmasta/reelsync-site/issues">open an issue</a>.</footer>
+</main>
+</body>
+</html>
